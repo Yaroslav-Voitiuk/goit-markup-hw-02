@@ -1,0 +1,20 @@
+
+.header_navigation a {
+    color: black;
+}
+
+.header_navigation  a:hover {
+    color: #2196F3;
+}
+
+.business-solutions,.business-solutions button {
+    background-color: #2F303A;
+    color: #fff;
+}
+.business-solutions button{
+    background-color: #2196F3;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}

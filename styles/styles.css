@@ -1,20 +1,41 @@
+:root {
+    --blue-text-color:#2196F3;
+    --white-text-color:#fff;
+    --black-text-color:#000;
+    --background-gray-color:#2F303A;
+}
 
+.header_navigation .active {
+    color: var(--blue-text-color);
+}
 .header_navigation a {
-    color: black;
+    color: var(--black-text-color);
 }
 
-.header_navigation  a:hover {
-    color: #2196F3;
+.header_navigation  a:hover,
+.footer_navigation  a:hover {
+    color: var(--blue-text-color);
 }
 
-.business-solutions,.business-solutions button {
-    background-color: #2F303A;
-    color: #fff;
+.business-solutions, .business-solutions button {
+    background-color: var(--background-gray-color);
+    color: var(--white-text-color);
+    text-align: center;
 }
 .business-solutions button{
-    background-color: #2196F3;
-    color: #fff;
+    background-color: var(--blue-text-color);
+    color: var(--white-text-color);
+}
+.business-solutions button:hover {
+    background-color: #2179c2e0;
+    color: var(--white-text-color);
 }
 ul {
     list-style: none;
+}
+.footer_navigation {
+    background-color: var(--background-gray-color);
+}
+.footer_navigation a{
+    color: var(--white-text-color);
 }

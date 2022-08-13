@@ -18,12 +18,13 @@
     text-decoration: none;
 }
 
-button {
-    cursor: pointer;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--body-title-color);
+}
+
+button {
+    cursor: pointer;
 }
 
 
@@ -33,7 +34,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--blue-text-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -44,7 +45,6 @@ body {
 
 
 .menu-link {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -54,11 +54,10 @@ body {
 
 .contact-phonenumber,
 .contact-email {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
 }
@@ -66,7 +65,7 @@ body {
 .page-header .active,
 .page-header  a:hover,
 .page-header  a:focus,
-.page-footer  a:hover
+.page-footer  a:hover,
 .page-footer  a:focus {
     color: var(--blue-text-color);
 }
@@ -83,7 +82,7 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -94,7 +93,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
     display: flex;
     align-items: center;
     text-align: center;
@@ -110,35 +109,27 @@ body {
 }
 
 .features-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--body-title-color);
 }
 .features-text    {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1,714;
     letter-spacing: 0.03em;
     color: var(--body-text-color);
 }
 
 .work-title,
 .team-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1,16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--body-title-color);
 }
 
 .team {
@@ -147,31 +138,67 @@ body {
 
 .card-back {
     background-color: var(--team-background-card-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .worker-name {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1,1875;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--body-title-color);
 }
 
 .work-position {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1,1875;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--body-text-color);
 }
+
+/* PORTFOLIO */
+
+.port-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--team-background-color);
+    color: var(--body-title-color);
+    cursor: pointer;
+}
+
+.port-button:active,
+.port-button:focus {
+    background: var(--blue-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--white-text-color);
+    border-radius: 4px;
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,875;
+    letter-spacing: 0.03em;
+    color: var(--body-text-color);
+}
+
 /* FOOTER */
 .page-footer {
     background-color: var(--background-gray-color);
@@ -182,22 +209,18 @@ body {
 }
 
 .contact-location {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1,714;
     letter-spacing: 0.03em;
     color: var(--white-text-color);
 }
 
 .footer-email,
 .footer-phonenumber {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1,714;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
